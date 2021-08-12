@@ -4,7 +4,7 @@ from django.contrib import admin
 #from django.urls import path
 from django.conf.urls import  include, url
 
-import firstapp
+import firstapp.views
 
 urlpatterns = [
     url(r'^$', firstapp.views.home_page, name='home'),
