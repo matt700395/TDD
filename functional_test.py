@@ -36,7 +36,6 @@ class NewVisitorTest(unittest.TestCase):#1
 
         inputbox.send_keys(Keys.ENTER)
 
-        time.sleep(10)
         table = self.browser.find_element_by_id('id_list_table')
         rows = table.find_element_by_tag_name('tr')
         self.assertTrue(
